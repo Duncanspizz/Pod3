@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/components.css' %}">
+    {% block headers %}
+    <h1>Mnimi</h1>
+    {% endblock headers %}
+</head>
+<body>
+    {% block content %}
+    {% endblock content %}
+</body>
+<nav>
+    <ul class="menu">
+        <li class="item"><a href="#">Home</a></li>
+        <li class="item"><a href="#">Login</a></li>
+    </ul>
+</nav>
+<table style="background-color:#33475b"></table>
+</html>
